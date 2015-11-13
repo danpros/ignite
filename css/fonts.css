@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lusitana';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lusitana'), url(https://fonts.gstatic.com/s/lusitana/v4/h_1ZjHXv2tOhJGwbefP69vesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Lusitana';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lusitana Bold'), local('Lusitana-Bold'), url(https://fonts.gstatic.com/s/lusitana/v4/oCjlVB3OWc0D00Ervq8JG44P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+}
