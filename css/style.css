@@ -1868,38 +1868,38 @@ If you want more information about customizing Ignite with CSS, check out this g
 /* Archive */
 
 .widget.widget_archive {
-	padding-bottom: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 ul.archivegroup {
-	margin-bottom: 0px;
-	margin-top: 0px;
-    list-style: outside none none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  list-style: outside none none;
 }
 
 .archivegroup .expanded ul {
-    display: block;
+  display: block;
 }
 
 .archivegroup .collapsed ul {
-    display: none;
+  display: none;
 }
 
 ul.month {
-    list-style: outside none none;
-    padding: 0;
+  list-style: outside none none;
+  padding: 0;
 }
 
 .widget_archive ul li a {
-    display: inline;
-    text-decoration: none;
+  display: inline;
+  text-decoration: none;
 }
 
 .widget_archive ul li {
-    border-bottom: 1px solid #d9dcdf;
-    margin: 0;
-    padding: 0;
-    transition: 0;
+  border-bottom: 1px solid #d9dcdf;
+  margin: 0;
+  padding: 0;
+  transition: 0;
 }
 
 .widget_archive ul li:hover {
@@ -1912,7 +1912,7 @@ ul.month {
 }
 
 .widget_archive ul ul {
-    margin: 0 0 0 1.3em;
+  margin: 0 0 0 1.3em;
 }
 
 /*----------------------------
@@ -1920,44 +1920,49 @@ ul.month {
 -----------------------------*/
 
 .tab {
-    width: 100%;
-    line-height: 1;
-    border-bottom: 1px solid #F1F1F1;
-	margin-bottom:1.2308em;
+  width: 100%;
+  line-height: 1;
+  border-bottom: 1px solid #F1F1F1;
+  margin-bottom:1.2308em;
 }
 
 .tab ul {
-	padding:0;
-	margin:0;
+  padding:0;
+  margin:0;
 }
 
 .tab  li {
-    display: inline-block;
-	margin:0;
-	padding:0;
+  display: inline-block;
+  margin:0;
+  padding:0;
 }
 
 .tab a {
-    background: #F1F1F1;
-    border-radius: 6px 6px 0px 0;
-    color: #555555;
-    text-align: center;
-    padding: 8px 14px;
-    display: inline-block;
-    margin: 0 5px;
+  background: #F1F1F1;
+  border-radius: 6px 6px 0px 0;
+  color: #555555;
+  text-align: center;
+  padding: 8px 14px;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /* Custom */
 
+.menu-primary-items .active > a {
+  background: #e6a117;
+  color: white;
+}
+
 .featured-quote, .featured-link {
-	margin-bottom: 5%;
-	font-size:24px;
+  margin-bottom: 5%;
+  font-size:24px;
 }
 
 .featured-quote blockquote {
-	margin:0;
-	padding-left: 0;
-	border:none;
+  margin:0;
+  padding-left: 0;
+  border:none;
 }
 
 .breadcrumbs {
@@ -1965,23 +1970,23 @@ ul.month {
 }
 
 .widget.widget_search {
-	padding-bottom: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .widget.widget_comments p {
-	margin:0;
+  margin:0;
 }
 
 .widget.widget_comments a {
-	display:inline;
+  display:inline;
 }
 
 .design-credit p {
-	font-size:10px;
-	margin:0;
+  font-size:10px;
+  margin:0;
 }
 
 .credit  p{
-	display:inline;
-	line-height:1;
+  display:inline;
+  line-height:1;
 }

@@ -1,6 +1,6 @@
 <article class="post entry">
     <header class="entry-header">
-        <h1 class="entry-title">Search results not found!</a></h1>
+        <h1 class="entry-title">Search results not found!</h1>
     </header>
     <div class="entry-content">
         <p>Please search again, or would you like to try our <a href="<?php echo site_url() ?>">homepage</a> instead?</p>

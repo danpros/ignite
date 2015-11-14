@@ -1,6 +1,6 @@
 <article class="post entry">
     <header class="entry-header">
-        <h1 class="entry-title">This page doesn't exist!</a></h1>
+        <h1 class="entry-title">This page doesn't exist!</h1>
     </header>
     <div class="entry-content">
         <p>Please search to find what you're looking for or visit our <a href="<?php echo site_url() ?>">homepage</a> instead.</p>
