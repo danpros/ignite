@@ -1990,3 +1990,16 @@ ul.month {
   display:inline;
   line-height:1;
 }
+
+ul.pagination {
+  margin:0;
+}
+
+.pagination li {
+  list-style:none;
+  display:inline-block;
+}
+
+.pagination li.active span {
+  text-decoration:underline;
+}

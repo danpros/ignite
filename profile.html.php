@@ -33,12 +33,7 @@
 <?php if (!empty($pagination['prev']) || !empty($pagination['next'])): ?>
 <div class="loop-pagination-container">
     <nav class="pagination loop-pagination">
-        <?php if (!empty($pagination['prev'])): ?>
-            <a href="?page=<?php echo $page - 1 ?>" rel="prev" class="prev page-numbers">« Previous</a>
-        <?php endif;?>
-        <?php if (!empty($pagination['next'])): ?>
-            <a class="next page-numbers" href="?page=<?php echo $page + 1 ?>" rel="next">Next »</a>
-        <?php endif;?>
+        <?php echo $pagination['html'];?>
     </nav>
 </div>
 <?php endif; ?>
