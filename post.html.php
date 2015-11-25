@@ -63,7 +63,7 @@
             <?php endif; ?>
         </nav>
         <div class="author-meta">
-            <img width="72" height="72" class="avatar avatar-72 photo" src="<?php echo site_url();?>themes/twentyfifteen/images/avatar.png" alt="<?php echo $author->name;?>">                    
+            <img width="72" height="72" class="avatar avatar-72 photo" src="<?php echo site_url();?>themes/ignite/images/avatar.png" alt="<?php echo $author->name;?>">                    
             <div class="name-container">
                 <h4><a href="<?php echo $p->authorUrl;?>"><?php echo $author->name;?></a></h4>
             </div>
