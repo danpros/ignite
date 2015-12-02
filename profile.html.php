@@ -30,6 +30,7 @@
         </article>
     </div>
 </div>
+<?php if (!empty($posts)) { ?>
 <?php if (!empty($pagination['prev']) || !empty($pagination['next'])): ?>
 <div class="loop-pagination-container">
     <nav class="pagination loop-pagination">
@@ -37,3 +38,4 @@
     </nav>
 </div>
 <?php endif; ?>
+<?php } ?>
