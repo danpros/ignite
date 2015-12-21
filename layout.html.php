@@ -68,10 +68,12 @@
                     <h2 class="widget-title">Recent Posts</h2>
                     <?php echo recent_posts() ?>
                 </section>
+                <?php if (config('views.counter') === 'true') :?>
                 <section class="widget widget_popular_entries">        
                     <h2 class="widget-title">Popular Posts</h2>
                     <?php echo popular_posts() ?>
                 </section>
+                <?php endif;?>
                 <?php if (disqus()): ?>
                 <section class="widget widget_comments">
                     <h2 class="widget-title">Recent Comments</h2>
