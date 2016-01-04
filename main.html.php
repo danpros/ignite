@@ -34,7 +34,7 @@
     </div>
     <div class="excerpt-content">
         <article>
-            <p><?php echo get_teaser($p->body) ?></p>
+            <?php echo get_teaser($p->body, $p->url); ?>
             <?php if (config('teaser.type') === 'trimmed'):?><p><a class="more-link" href="<?php echo $p->url; ?>">Read More <span class="screen-reader-text"><?php echo $p->title; ?></span></a></p><?php endif;?> 
         </article>
     </div>
