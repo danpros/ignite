@@ -25,7 +25,7 @@
         <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a>
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo date('F d, Y', $p->date) ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->author; ?>" rel="author"><?php echo $p->author; ?></a>            
+    <div class="entry-meta-top">Published <?php echo format_date($p->date); ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->author; ?>" rel="author"><?php echo $p->author; ?></a>            
     </div>
     <div class="excerpt-header">
         <h2 class="excerpt-title">
@@ -35,7 +35,7 @@
     <div class="excerpt-content">
         <article>
             <?php echo get_teaser($p->body, $p->url); ?>
-            <?php if (config('teaser.type') === 'trimmed'):?><p><a class="more-link" href="<?php echo $p->url; ?>">Read More <span class="screen-reader-text"><?php echo $p->title; ?></span></a></p><?php endif;?> 
+            <?php if (config('teaser.type') === 'trimmed'):?><p><a class="more-link" href="<?php echo $p->url; ?>"><?php echo config('read.more'); ?> <span class="screen-reader-text"><?php echo $p->title; ?></span></a></p><?php endif;?> 
         </article>
     </div>
     <div class="excerpt-categories">

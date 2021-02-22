@@ -24,7 +24,7 @@
          <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a> 
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo date('F d, Y', $p->date) ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->author; ?>" rel="author"><?php echo $p->author; ?></a>            
+    <div class="entry-meta-top">Published <?php echo format_date($p->date); ?> ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->author; ?>" rel="author"><?php echo $p->author; ?></a>            
     </div>
     <div class="entry-header">
         <?php if (login()) { echo tab($p); } ?>
