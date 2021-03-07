@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <div class="post entry static">
     <div class="entry-header">
         <?php if (login()) { echo tab($p); } ?>

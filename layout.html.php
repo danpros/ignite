@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,14 +85,9 @@
                     <?php echo archive_list() ?>
                 </section>
                 <section class="widget widget_tags">
-                    <h2 class="widget-title">Popular Tags</h2>
-                        <?php $i = 1; $tags = tag_cloud(true); arsort($tags); ?>
-                        <ul>
-                        <?php foreach ($tags as $tag => $count):?>
-                            <li><a href="<?php echo site_url();?>tag/<?php echo $tag;?>"><?php echo tag_i18n($tag);?> (<?php echo $count;?>)</a></li>
-                            <?php if ($i++ >= 5) break;?>
-                        <?php endforeach;?>
-                        </ul>
+                    <h2 class="widget-title">Tags</h2>
+                    <style>.tag-cloud a {text-decoration:none;}</style>
+                    <div class="tag-cloud"><?php echo tag_cloud();?></div>
                 </section>
             </div><!-- #sidebar-primary -->
         </div>

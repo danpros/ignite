@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <?php foreach ($posts as $p): ?>
 <div class="post hentry excerpt">
     <?php if (!empty($p->image)):?>

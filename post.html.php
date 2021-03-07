@@ -1,3 +1,4 @@
+<?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <div class="post entry full">
     <?php if (!empty($p->image)):?>
     <div class="featured-image">
