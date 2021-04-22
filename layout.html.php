@@ -97,7 +97,7 @@
         <span><?php echo blog_description();?></span>
         <div class="design-credit">
             <div class="credit"><?php echo copyright();?></div>
-            <p>Design by <a href="https://www.competethemes.com" target="_blank">Compete Themes</a></p>
+            <span>Design by <a href="https://www.competethemes.com" target="_blank" rel="nofollow">Compete Themes</a></span>
         </div>
     </footer>
     <script type="text/javascript" src="<?php echo site_url();?>themes/ignite/js/production.js" async="async"></script>

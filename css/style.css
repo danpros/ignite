@@ -1981,12 +1981,12 @@ ul.month {
   display:inline;
 }
 
-.design-credit p {
+.design-credit span {
   font-size:10px;
   margin:0;
 }
 
-.credit  p{
+.credit span{
   display:inline;
   line-height:1;
 }
