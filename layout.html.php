@@ -1,6 +1,6 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 <!DOCTYPE html>
-<html lang="<?php echo str_replace('_', '-', config('language'));?>">
+<html lang="<?php echo blog_language();?>">
 <head>
     <?php echo head_contents();?>
     <title><?php echo $title;?></title>
@@ -8,19 +8,12 @@
     <link rel="canonical" href="<?php echo $canonical; ?>" />
     <?php if (publisher()): ?>
     <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>
-    <link rel="stylesheet" id="ct-ignite-google-fonts-css" href="<?php echo site_url();?>themes/ignite/css/fonts.css" type="text/css" media="all">
-    <link rel="stylesheet" id="font-awesome-css" href="<?php echo site_url();?>themes/ignite/css/font-awesome.css" type="text/css" media="all">
-    <link rel="stylesheet" id="style-css" href="<?php echo site_url();?>themes/ignite/css/style.css" type="text/css" media="all">
-    <script type="text/javascript" src="<?php echo site_url();?>themes/ignite/js/jquery.js"></script>
-    <script type="text/javascript" src="<?php echo site_url();?>themes/ignite/js/jquery-migrate.js"></script>
+    <link rel="stylesheet" id="ct-ignite-google-fonts-css" href="<?php echo theme_path();?>css/fonts.css" type="text/css" media="all">
+    <link rel="stylesheet" id="font-awesome-css" href="<?php echo theme_path();?>css/font-awesome.css" type="text/css" media="all">
+    <link rel="stylesheet" id="style-css" href="<?php echo theme_path();?>css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="<?php echo theme_path();?>js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo theme_path();?>js/jquery-migrate.js"></script>
 </head>
-<?php     
-    if (isset($_GET['search'])) {
-        $search = $_GET['search'];
-        $url = site_url() . 'search/' . remove_accent($search);
-        header("Location: $url");
-    }
-?>
 <body id="ignite" class="home blog">
 <?php if (facebook()) { echo facebook(); } ?>
 <?php if (login()) { toolbar(); } ?>
@@ -100,7 +93,7 @@
             <span>Design by <a href="https://www.competethemes.com" target="_blank" rel="nofollow">Compete Themes</a></span>
         </div>
     </footer>
-    <script type="text/javascript" src="<?php echo site_url();?>themes/ignite/js/production.js" async="async"></script>
+    <script type="text/javascript" src="<?php echo theme_path();?>js/production.js" async="async"></script>
     <?php if (analytics()): ?><?php echo analytics() ?><?php endif; ?>
 </body>
 </html>
