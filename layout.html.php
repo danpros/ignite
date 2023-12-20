@@ -78,9 +78,9 @@
                     <?php echo archive_list() ?>
                 </section>
                 <section class="widget widget_tags">
-                    <h2 class="widget-title">Tags</h2>
-                    <style>.tag-cloud a {text-decoration:none;}</style>
-                    <div class="tag-cloud"><?php echo tag_cloud();?></div>
+                    <h2 class="widget-title">Category</h2>
+					<style>.category-widget ul li a {display:inline}</style>
+                    <div class="category-widget"><?php echo category_list();?></div>
                 </section>
             </div><!-- #sidebar-primary -->
         </div>
