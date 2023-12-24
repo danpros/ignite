@@ -26,7 +26,7 @@
         <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a>
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo format_date($p->date); ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->authorName; ?>" rel="author"><?php echo $p->authorName; ?></a>            
+    <div class="entry-meta-top"><?php echo i18n("Published");?> <?php echo format_date($p->date); ?> <?php echo i18n("by");?> <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->authorName; ?>" rel="author"><?php echo $p->authorName; ?></a>            
     </div>
     <div class="excerpt-header">
         <h2 class="excerpt-title">
@@ -47,9 +47,9 @@
     </div>
     <div class="excerpt-comments">
         <?php if (disqus_count()) { ?> 
-            <p><span><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#disqus_thread"> comments</a></span></p>
+            <p><span><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#disqus_thread"> <?php echo i18n("Comments");?></a></span></p>
         <?php } elseif (facebook()) { ?> 
-            <p><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> comments</span></a></p>
+            <p><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> <?php echo i18n("Comments");?></span></a></p>
         <?php } ?>
     </div>
 </div>

@@ -6,8 +6,6 @@
     <title><?php echo $title;?></title>
     <meta name="description" content="<?php echo $description; ?>"/>
     <link rel="canonical" href="<?php echo $canonical; ?>" />
-    <?php if (publisher()): ?>
-    <link href="<?php echo publisher() ?>" rel="publisher" /><?php endif; ?>
     <link rel="stylesheet" id="ct-ignite-google-fonts-css" href="<?php echo theme_path();?>css/fonts.css" type="text/css" media="all">
     <link rel="stylesheet" id="font-awesome-css" href="<?php echo theme_path();?>css/font-awesome.css" type="text/css" media="all">
     <link rel="stylesheet" id="style-css" href="<?php echo theme_path();?>css/style.css" type="text/css" media="all">
@@ -52,33 +50,33 @@
                 <section id="search-3" class="widget widget_search">
                     <div class="search-form-container">
                         <form role="search">
-                            <label class="screen-reader-text">Search for:</label>
-                            <input class="form-control" type="search" placeholder="Type to search" name="search">
+                            <label class="screen-reader-text"><?php echo i18n("Search_for");?></label>
+                            <input class="form-control" type="search" placeholder="<?php echo i18n("Search");?> ..." name="search">
                         </form>
                     </div>
                 </section>        
                 <section class="widget widget_recent_entries">        
-                    <h2 class="widget-title">Recent Posts</h2>
+                    <h2 class="widget-title"><?php echo i18n("Recent_posts");?></h2>
                     <?php echo recent_posts() ?>
                 </section>
                 <?php if (config('views.counter') === 'true') :?>
                 <section class="widget widget_popular_entries">        
-                    <h2 class="widget-title">Popular Posts</h2>
+                    <h2 class="widget-title"><?php echo i18n("Popular_posts");?></h2>
                     <?php echo popular_posts() ?>
                 </section>
                 <?php endif;?>
                 <?php if (disqus()): ?>
                 <section class="widget widget_comments">
-                    <h2 class="widget-title">Recent Comments</h2>
+                    <h2 class="widget-title"><?php echo i18n("Comments");?></h2>
                     <script src="//<?php echo config('disqus.shortname');?>.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=0&amp;avatar_size=48&amp;excerpt_length=200&amp;hide_mods=0" type="text/javascript"></script><style>li.dsq-widget-item {padding-top:15px;} img.dsq-widget-avatar {margin-right:5px;}</style>
                 </section>
                 <?php endif;?>
                 <section class="widget widget_archive">        
-                    <h2 class="widget-title">Archive</h2>
+                    <h2 class="widget-title"><?php echo i18n("Archives");?></h2>
                     <?php echo archive_list() ?>
                 </section>
                 <section class="widget widget_tags">
-                    <h2 class="widget-title">Category</h2>
+                    <h2 class="widget-title"><?php echo i18n("Category");?></h2>
 					<style>.category-widget ul li a {display:inline}</style>
                     <div class="category-widget"><?php echo category_list();?></div>
                 </section>

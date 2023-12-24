@@ -25,7 +25,7 @@
          <i class="fa fa-external-link"></i> <a target="_blank" href="<?php echo $p->link ?>"><?php echo $p->link ?></a> 
     </div>
     <?php endif; ?>
-    <div class="entry-meta-top">Published <?php echo format_date($p->date); ?> by <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->authorName; ?>" rel="author"><?php echo $p->authorName; ?></a>            
+    <div class="entry-meta-top"><?php echo i18n("Published");?> <?php echo format_date($p->date); ?> <?php echo i18n("by");?> <a href="<?php echo $p->authorUrl; ?>" title="Posts by <?php echo $p->authorName; ?>" rel="author"><?php echo $p->authorName; ?></a>            
     </div>
     <div class="entry-header">
         <?php if (login()) { echo tab($p); } ?>
@@ -40,25 +40,25 @@
         <nav class="further-reading">
             <?php if (empty($next)): ?>
                 <p class="prev">
-                    <span>No Newer Posts</span>
-                    <a href="<?php echo site_url();?>">Return to Home</a>
+                    <span><?php echo i18n("No_posts_found");?></span>
+                    <a href="<?php echo site_url();?>"><?php echo i18n("Back_to");?> <?php echo i18n("Home");?></a>
                 </p>
             <?php endif; ?>
             <?php if (!empty($next)): ?>
                 <p class="prev">
-                    <span>Newer Posts</span>
+                    <span><?php echo i18n("Next_post");?></span>
                     <a href="<?php echo($next['url']); ?>"><?php echo($next['title']); ?></a>
                 </p>
             <?php endif; ?>
             <?php if (empty($prev)): ?>
                 <p class="next">
-                    <span>No Older Posts</span>
-                    <a href="<?php echo site_url();?>">Return to Home</a>
+                    <span><?php echo i18n("No_posts_found");?></span>
+                    <a href="<?php echo site_url();?>"><?php echo i18n("Back_to");?> <?php echo i18n("Home");?></a>
                 </p>
             <?php endif; ?>
             <?php if (!empty($prev)): ?>
                 <p class="next">
-                    <span>Older Posts</span>
+                    <span><?php echo i18n("Prev_post");?></span>
                     <a href="<?php echo($prev['url']); ?>"><?php echo($prev['title']); ?></a>
                 </p>
             <?php endif; ?>
@@ -78,9 +78,9 @@
         </div>
         <div class="excerpt-comments">
             <?php if (disqus_count()) { ?> 
-                <p><span><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#disqus_thread"> comments</a></span></p>
+                <p><span><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#disqus_thread"> <?php echo i18n("Comments");?></a></span></p>
             <?php } elseif (facebook()) { ?> 
-                <p><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> comments</span></a></p>
+                <p><i class="fa fa-comments"></i> <a href="<?php echo $p->url ?>#comments"><span><fb:comments-count href=<?php echo $p->url ?>></fb:comments-count> <?php echo i18n("Comments");?></span></a></p>
             <?php } ?>
         </div>
     </div>
@@ -94,7 +94,7 @@
 <?php if (facebook() || disqus()): ?>
 <section class="comments" id="comments">
     <div class="comments-number">
-        <h3>Comments</h3>
+        <h3><?php echo i18n("Comments");?></h3>
     </div>
     <?php if (facebook()): ?>
         <div class="fb-comments" data-href="<?php echo $p->url ?>" data-numposts="<?php echo config('fb.num') ?>" data-colorscheme="<?php echo config('fb.color') ?>"></div>
