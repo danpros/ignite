@@ -9,4 +9,22 @@
             <?php echo $p->body; ?>     
         </article>
     </div>
+	
+    <div class="entry-meta-bottom">
+        <nav class="further-reading">
+            <?php if (!empty($next)): ?>
+                <p class="prev">
+                    <span><?php echo i18n("Next");?></span>
+                    <a href="<?php echo($next['url']); ?>"><?php echo($next['title']); ?></a>
+                </p>
+            <?php endif; ?>
+            <?php if (!empty($prev)): ?>
+                <p class="next">
+                    <span><?php echo i18n("Prev");?></span>
+                    <a href="<?php echo($prev['url']); ?>"><?php echo($prev['title']); ?></a>
+                </p>
+            <?php endif; ?>
+        </nav>
+    </div>	
+	
 </div>
