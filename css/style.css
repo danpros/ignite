@@ -2003,3 +2003,17 @@ ul.pagination {
 .pagination li.active span {
   text-decoration:underline;
 }
+
+@media (min-width: 50em) {
+  .site-header .social-media-icons a {
+    color: #373B41;
+    line-height: 4.25em;
+  }
+}
+
+.social-logo a {
+  color: white;
+  margin: 0 0.375em;
+  text-decoration: none;
+  font-size: 1em!important;
+}

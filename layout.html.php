@@ -29,11 +29,7 @@
         <div class="menu-container menu-primary" id="menu-primary" role="navigation">
             <p id="site-description"><?php echo blog_tagline();?></p>
             <?php echo menu('menu-primary-items') ?>
-            <ul class="social-media-icons visible">            
-                <?php if(!empty(config('social.twitter'))):?><li><a class="twitter" target="_blank" href="<?php echo config('social.twitter');?>"><i class="fa fa-twitter-square" title="twitter icon"></i></a></li><?php endif;?>
-                <?php if(!empty(config('social.facebook'))):?><li><a class="facebook" target="_blank" href="<?php echo config('social.facebook');?>"><i class="fa fa-facebook-square" title="facebook icon"></i></a></li><?php endif;?>
-                <li><a class="rss" target="_blank" href="<?php echo site_url();?>feed/rss"><i class="fa fa-rss-square" title="rss icon"></i></a></li>
-            </ul>
+            <?php echo social('social-media-icons');?>
         </div><!-- #menu-primary .menu-container -->
     </header>
     <div id="overflow-container" class="overflow-container">
