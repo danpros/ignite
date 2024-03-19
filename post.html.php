@@ -37,6 +37,8 @@
         </article>
     </div>
     <div class="entry-meta-bottom">
+	    <div class="related-posts"><style>.related-posts span{border-bottom: solid 1px #e6a117;font-weight: 700;position: relative;display: inline-block;} .related-posts ul {margin-top:5px;}.related-posts a {text-decoration:none}</style><strong><span><?php echo i18n("related_posts");?></span></strong>
+        <?php echo get_related($p->related);?></div>	
         <nav class="further-reading">
             <?php if (empty($next)): ?>
                 <p class="prev">
