@@ -2017,3 +2017,7 @@ ul.pagination {
   text-decoration: none;
   font-size: 1em!important;
 }
+
+.toc a {
+  text-decoration:none;
+}
